@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="YTextView">
+        <attr name="y_background_normal" format="color" />
+        <attr name="y_background_pressed" format="color" />
+        <attr name="y_background_selected" format="color" />
+        <attr name="y_background_un_enable" format="color" />
+
+        <attr name="y_corners_radius" format="dimension" />
+        <attr name="y_corners_left_top" format="dimension" />
+        <attr name="y_corners_left_bottom" format="dimension" />
+        <attr name="y_corners_right_top" format="dimension" />
+        <attr name="y_corners_right_bottom" format="dimension" />
+
+        <attr name="y_stroke_width" format="dimension" />
+        <attr name="y_stroke_color" format="color" />
+        <attr name="y_stroke_dash_gap" format="dimension" />
+        <attr name="y_stroke_dash_width" format="dimension" />
+
+        <attr name="y_text_color_normal" format="color" />
+        <attr name="y_text_color_pressed" format="color" />
+        <attr name="y_text_color_selected" format="color" />
+        <attr name="y_text_color_un_enable" format="color" />
+    </declare-styleable>
+</resources>

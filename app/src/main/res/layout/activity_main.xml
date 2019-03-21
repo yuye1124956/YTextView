@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.rainy.ytextviewlib.YTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="onTextClick"
+        android:padding="10dp"
+        android:text="我是测试"
+        app:y_background_normal="#f00"
+        app:y_background_pressed="#ff0"
+        app:y_corners_left_bottom="10dp"
+        app:y_corners_left_top="10dp"
+        app:y_corners_right_bottom="10dp"
+        app:y_stroke_width="3dp"
+        app:y_stroke_color="#0ff"
+        app:y_corners_right_top="10dp"
+        app:y_text_color_normal="@android:color/black"
+        app:y_text_color_pressed="#0f0" />
+
+</RelativeLayout>
