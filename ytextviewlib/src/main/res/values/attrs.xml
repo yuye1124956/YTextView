@@ -1,25 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--公共属性-->
+    <attr name="y_background_normal" format="color" />
+    <attr name="y_background_pressed" format="color" />
+    <attr name="y_background_selected" format="color" />
+    <attr name="y_background_un_enable" format="color" />
+
+    <attr name="y_corners_radius" format="dimension" />
+    <attr name="y_corners_left_top" format="dimension" />
+    <attr name="y_corners_left_bottom" format="dimension" />
+    <attr name="y_corners_right_top" format="dimension" />
+    <attr name="y_corners_right_bottom" format="dimension" />
+
+    <attr name="y_stroke_width" format="dimension" />
+    <attr name="y_stroke_color" format="color" />
+    <attr name="y_stroke_dash_gap" format="dimension" />
+    <attr name="y_stroke_dash_width" format="dimension" />
+
+    <attr name="y_text_color_normal" format="color" />
+    <attr name="y_text_color_pressed" format="color" />
+    <attr name="y_text_color_selected" format="color" />
+    <attr name="y_text_color_un_enable" format="color" />
+
+    <!--真正用于解析的属性-->
+    <declare-styleable name="YAttrs">
+
+        <attr name="y_background_normal" />
+        <attr name="y_background_pressed" />
+        <attr name="y_background_selected" />
+        <attr name="y_background_un_enable" />
+
+        <attr name="y_corners_radius" />
+        <attr name="y_corners_left_top" />
+        <attr name="y_corners_left_bottom" />
+        <attr name="y_corners_right_top" />
+        <attr name="y_corners_right_bottom" />
+
+        <attr name="y_stroke_width" />
+        <attr name="y_stroke_color" />
+        <attr name="y_stroke_dash_gap" />
+        <attr name="y_stroke_dash_width" />
+
+        <attr name="y_text_color_normal" />
+        <attr name="y_text_color_pressed" />
+        <attr name="y_text_color_selected" />
+        <attr name="y_text_color_un_enable" />
+    </declare-styleable>
+
+    <!--只是用于xml中提示-->
     <declare-styleable name="YTextView">
-        <attr name="y_background_normal" format="color" />
-        <attr name="y_background_pressed" format="color" />
-        <attr name="y_background_selected" format="color" />
-        <attr name="y_background_un_enable" format="color" />
+        <attr name="y_background_normal" />
+        <attr name="y_background_pressed" />
+        <attr name="y_background_selected" />
+        <attr name="y_background_un_enable" />
 
-        <attr name="y_corners_radius" format="dimension" />
-        <attr name="y_corners_left_top" format="dimension" />
-        <attr name="y_corners_left_bottom" format="dimension" />
-        <attr name="y_corners_right_top" format="dimension" />
-        <attr name="y_corners_right_bottom" format="dimension" />
+        <attr name="y_corners_radius" />
+        <attr name="y_corners_left_top" />
+        <attr name="y_corners_left_bottom" />
+        <attr name="y_corners_right_top" />
+        <attr name="y_corners_right_bottom" />
 
-        <attr name="y_stroke_width" format="dimension" />
-        <attr name="y_stroke_color" format="color" />
-        <attr name="y_stroke_dash_gap" format="dimension" />
-        <attr name="y_stroke_dash_width" format="dimension" />
+        <attr name="y_stroke_width" />
+        <attr name="y_stroke_color" />
+        <attr name="y_stroke_dash_gap" />
+        <attr name="y_stroke_dash_width" />
 
-        <attr name="y_text_color_normal" format="color" />
-        <attr name="y_text_color_pressed" format="color" />
-        <attr name="y_text_color_selected" format="color" />
-        <attr name="y_text_color_un_enable" format="color" />
+        <attr name="y_text_color_normal" />
+        <attr name="y_text_color_pressed" />
+        <attr name="y_text_color_selected" />
+        <attr name="y_text_color_un_enable" />
+    </declare-styleable>
+
+    <!--只是用于xml中提示-->
+    <declare-styleable name="YLinearLayout">
+        <attr name="y_background_normal" />
+        <attr name="y_background_pressed" />
+        <attr name="y_background_selected" />
+        <attr name="y_background_un_enable" />
+
+        <attr name="y_corners_radius" />
+        <attr name="y_corners_left_top" />
+        <attr name="y_corners_left_bottom" />
+        <attr name="y_corners_right_top" />
+        <attr name="y_corners_right_bottom" />
+
+        <attr name="y_stroke_width" />
+        <attr name="y_stroke_color" />
+        <attr name="y_stroke_dash_gap" />
+        <attr name="y_stroke_dash_width" />
+    </declare-styleable>
+
+    <!--只是用于xml中提示-->
+    <declare-styleable name="YRelativeLayout">
+        <attr name="y_background_normal" />
+        <attr name="y_background_pressed" />
+        <attr name="y_background_selected" />
+        <attr name="y_background_un_enable" />
+
+        <attr name="y_corners_radius" />
+        <attr name="y_corners_left_top" />
+        <attr name="y_corners_left_bottom" />
+        <attr name="y_corners_right_top" />
+        <attr name="y_corners_right_bottom" />
+
+        <attr name="y_stroke_width" />
+        <attr name="y_stroke_color" />
+        <attr name="y_stroke_dash_gap" />
+        <attr name="y_stroke_dash_width" />
+    </declare-styleable>
+
+    <!--只是用于xml中提示-->
+    <declare-styleable name="YFrameLayout">
+        <attr name="y_background_normal" />
+        <attr name="y_background_pressed" />
+        <attr name="y_background_selected" />
+        <attr name="y_background_un_enable" />
+
+        <attr name="y_corners_radius" />
+        <attr name="y_corners_left_top" />
+        <attr name="y_corners_left_bottom" />
+        <attr name="y_corners_right_top" />
+        <attr name="y_corners_right_bottom" />
+
+        <attr name="y_stroke_width" />
+        <attr name="y_stroke_color" />
+        <attr name="y_stroke_dash_gap" />
+        <attr name="y_stroke_dash_width" />
     </declare-styleable>
 </resources>

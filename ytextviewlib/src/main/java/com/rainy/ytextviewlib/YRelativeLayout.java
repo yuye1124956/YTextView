@@ -1,30 +1,29 @@
 package com.rainy.ytextviewlib;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
+import android.widget.RelativeLayout;
 
 /**
- * time:2019-03-20 15:10
+ * time:2019-04-08 18:02
  * description:
- * 带圆角按压等效果的TextView
- * 省去了大量shape文件
  *
  * @author yueleilei
  */
-public class YTextView extends AppCompatTextView {
+public class YRelativeLayout extends RelativeLayout {
     private YHelper mHelper;
 
-    public YTextView(Context context) {
+    public YRelativeLayout(Context context) {
         super(context);
     }
 
-    public YTextView(Context context, AttributeSet attrs) {
+    public YRelativeLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
     }
 
-    public YTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+
+    public YRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
     }
@@ -34,9 +33,6 @@ public class YTextView extends AppCompatTextView {
         mHelper.initAttrs(context, attrs);
         if (getBackground() == null) {
             setBackgroundDrawable(mHelper.getStateListDrawable());
-        }
-        if (mHelper.useCustomTextColor()) {
-            setTextColor(mHelper.getColorStateList());
         }
     }
 }
