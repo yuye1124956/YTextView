@@ -58,9 +58,9 @@ public class YTextView extends AppCompatTextView {
     private void init(Context context, AttributeSet attrs) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.YTextView);
         mBackgroundNormal = a.getColor(R.styleable.YTextView_y_background_normal, Color.TRANSPARENT);
-        mBackgroundPressed = a.getColor(R.styleable.YTextView_y_background_pressed, Color.TRANSPARENT);
-        mBackgroundSelected = a.getColor(R.styleable.YTextView_y_background_selected, Color.TRANSPARENT);
-        mBackgroundUnEnable = a.getColor(R.styleable.YTextView_y_background_un_enable, Color.TRANSPARENT);
+        mBackgroundPressed = a.getColor(R.styleable.YTextView_y_background_pressed, mBackgroundNormal);
+        mBackgroundSelected = a.getColor(R.styleable.YTextView_y_background_selected, mBackgroundNormal);
+        mBackgroundUnEnable = a.getColor(R.styleable.YTextView_y_background_un_enable, mBackgroundNormal);
 
         mCornersRadius = a.getDimensionPixelSize(R.styleable.YTextView_y_corners_radius, 0);
         mCornersLeftTop = a.getDimensionPixelSize(R.styleable.YTextView_y_corners_left_top, 0);
@@ -74,9 +74,9 @@ public class YTextView extends AppCompatTextView {
         mStrokeDashWidth = a.getDimensionPixelSize(R.styleable.YTextView_y_stroke_dash_width, 0);
 
         mTextColorNormal = a.getColor(R.styleable.YTextView_y_text_color_normal, Color.TRANSPARENT);
-        mTextColorPressed = a.getColor(R.styleable.YTextView_y_text_color_pressed, Color.TRANSPARENT);
-        mTextColorSelected = a.getColor(R.styleable.YTextView_y_text_color_selected, Color.TRANSPARENT);
-        mTextColorUnEnable = a.getColor(R.styleable.YTextView_y_text_color_un_enable, Color.TRANSPARENT);
+        mTextColorPressed = a.getColor(R.styleable.YTextView_y_text_color_pressed, mTextColorNormal);
+        mTextColorSelected = a.getColor(R.styleable.YTextView_y_text_color_selected, mTextColorNormal);
+        mTextColorUnEnable = a.getColor(R.styleable.YTextView_y_text_color_un_enable, mTextColorNormal);
         a.recycle();
         if (getBackground() == null) {
             setBackgroundDrawable(getStateListDrawable());
